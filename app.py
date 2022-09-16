@@ -10,7 +10,13 @@ result=''
 
 if st.button('PREDICT'):
    result=model.predict([[a,b,c,d]]).squeeze()
+   if result==0:
+      st.success('SETOSA')
+   elif result==1:
+      st.success('VERSICOLOR')
+   else:
+      st.success('VIRGINICA')
    
-   st.success(result)
+   
 
 
