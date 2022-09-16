@@ -9,7 +9,7 @@ d=st.number_input('Enter petal length')
 result=''
 
 if st.button('PREDICT'):
-   result=st.predict([[a,b,c,d]])
+   result=st.predict([[a,b,c,d]]).squeeze()
    st.success(result)
 
 
