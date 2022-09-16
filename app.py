@@ -10,6 +10,7 @@ result=''
 
 if st.button('PREDICT'):
    result=st.predict([a,b,c,d]).squeeze()
+   result=int(result)
    st.success(result)
 
 
