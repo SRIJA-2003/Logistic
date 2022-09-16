@@ -8,7 +8,7 @@ c=st.number_input('Enter petal width')
 d=st.number_input('Enter petal length')
 result=''
 
-if st.predict('PREDICT'):
+if model.predict('PREDICT'):
    result=st.predict([[a,b,c,d]])
    st.success(result)
 
